@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="./favicon/Emoji Without Mouth.ico"
+      type="image/x-icon"
+    />
+    <script src="script.js" defer></script>
+    <title>Typing Quote</title>
+  </head>
+  <body
+    oncopy="return false"
+    oncut="return false"
+    onpaste="return false"
+    onselectstart="return false"
+  >
+    <div class="container shadow" id="containerDiv">
+      <div class="title-box">
+        <h1>Typing Quote</h1>
+        <div class="timer" id="timer"></div>
+        <div class="speed" id="speed">0</div>
+        <div class="accuracy" id="accuracy">
+          <img src="./emoji/Expressionless.png" alt="emoji" id="emoji" />
+        </div>
+      </div>
+      <div class="quote-box">
+        <div class="quoteDisplay" id="quoteDisplay"></div>
+        <textarea class="quoteTyping" id="quoteTyping" autofocus></textarea>
+      </div>
+    </div>
+    <button class="refresh" id="refresh">refresh</button>
+  </body>
+</html>

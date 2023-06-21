@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  border-radius: 8px;
+}
+
+.shadow {
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #1a1a1a;
+}
+
+.typoline {
+  background-color: orange;
+}
+
+.quoteTyping {
+  resize: none;
+  overflow: hidden;
+  margin-top: 10px;
+  caret-color: darkgrey;
+}
+
+.title-box,
+.quote-box {
+  /*border: 3px solid rgba(224, 224, 224, 0.446);*/
+  margin: auto;
+  width: 1120px;
+  color: #fbfbfb;
+  background-color: #171717;
+}
+
+.title-box {
+  border-bottom: none;
+  font-family: "Roboto Slab", serif;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 20px 30px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quote-box {
+  padding: 30px 15px 30px;
+  font-family: "Asap", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  letter-spacing: 0.03em;
+  line-height: 130%;
+  position: relative;
+}
+.quote-box::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 0px;
+  height: 1px;
+  width: 1060px;
+  border-top: 3px solid rgba(230, 188, 19, 0.551);
+}
+.quoteTyping {
+  border: none;
+  border-bottom: solid black;
+  outline: none;
+  padding: 4px 9px 0px;
+  margin-left: 19px;
+  margin-right: 15px;
+  width: 1050px;
+  height: 43px;
+  background-color: #242424;
+  color: #ccc;
+  font-family: "Asap", sans-serif;
+  letter-spacing: 0.03em;
+  line-height: 130%;
+  font-size: 25px;
+}
+.quoteDisplay {
+  box-sizing: content-box;
+  margin-left: 27px;
+  margin-right: 24px;
+  width: 1032px;
+}
+
+.speed {
+  font-family: "Asap", sans-serif;
+  font-size: 100px;
+  margin-top: 5px;
+}
+#emoji {
+  width: 100px;
+  margin: 10px;
+}
+
+h1 {
+  margin: 10px;
+  font-size: 70px;
+}
+
+.refresh {
+  font-family: "Roboto Slab", serif;
+  color: #fbfbfb;
+  background-color: #171717;
+  width: 200px;
+  height: 50px;
+  font-size: 24px;
+  padding: 5px 10px 5px;
+  border-radius: 8px;
+  margin-top: 15px;
+  visibility: hidden;
+  display: block;
+  letter-spacing: 0.08em;
+}
+@media screen and (max-width: 1100px) {
+  .title-box,
+  .quote-box {
+    width: 700px;
+  }
+  .quoteTyping {
+    width: 630px;
+    font-size: 22px;
+  }
+  .quoteDisplay {
+    box-sizing: content-box;
+    width: 612px;
+  }
+  h1 {
+    width: 220px;
+    font-size: 60px;
+  }
+  .speed {
+    margin-top: 10px;
+    font-size: 85px;
+  }
+  .quote-box {
+    font-size: 22px;
+  }
+  .quote-box::before {
+    width: 630px;
+    margin-left: 4px;
+  }
+}
+
+@media screen and (max-width: 698px) {
+  .title-box,
+  .quote-box {
+    width: 600px;
+  }
+  .quoteTyping {
+    width: 530px;
+    font-size: 22px;
+  }
+  .quoteDisplay {
+    box-sizing: content-box;
+    width: 512px;
+  }
+  h1 {
+    width: 180px;
+    font-size: 50px;
+  }
+  .speed {
+    font-size: 85px;
+  }
+  .quote-box {
+    font-size: 22px;
+  }
+  .quote-box::before {
+    width: 530px;
+    margin-left: 4px;
+  }
+}
