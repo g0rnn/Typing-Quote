@@ -1,4 +1,4 @@
-const RANDOM_QUOTE_URL = "https://api.quotable.io/random";
+const RANDOM_QUOTE_URL = "http://api.quotable.io/random";
 const quoteDisplayElement = document.getElementById("quoteDisplay");
 const textareaElement = document.getElementById("quoteTyping");
 const speedElement = document.getElementById("speed");
